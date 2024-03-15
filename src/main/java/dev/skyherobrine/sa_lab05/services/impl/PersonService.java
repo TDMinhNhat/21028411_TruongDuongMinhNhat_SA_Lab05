@@ -54,12 +54,16 @@ public class PersonService implements IServices<Person, Long> {
     }
 
     @Override
-    public Optional<Person> findOne(Long aLong) {
+    public Optional<Person> findById(Long aLong) {
         return personRepository.findById(aLong);
     }
 
     @Override
     public List<Person> findAll() {
         return personRepository.findAll();
+    }
+
+    public Optional<Person> findPersonByPhone(String phone) {
+        return personRepository.findPersonByPhone(phone);
     }
 }

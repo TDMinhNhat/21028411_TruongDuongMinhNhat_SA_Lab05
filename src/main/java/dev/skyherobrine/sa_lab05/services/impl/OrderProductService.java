@@ -53,7 +53,7 @@ public class OrderProductService implements IServices<OrderProduct, Long> {
     }
 
     @Override
-    public Optional<OrderProduct> findOne(Long aLong) {
+    public Optional<OrderProduct> findById(Long aLong) {
         return orderProductRepository.findById(aLong);
     }
 

@@ -23,7 +23,11 @@ public class Person {
     @NonNull
     private String address;
 
-    @Column(name = "person_phone", nullable = false)
+    @Column(name = "person_phone", nullable = false, unique = true)
     @NonNull
     private String phone;
+
+    @Column(name = "person_email", nullable = false)
+    @NonNull
+    private String email;
 }

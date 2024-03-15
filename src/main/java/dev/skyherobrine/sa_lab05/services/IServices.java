@@ -7,6 +7,6 @@ public interface IServices<T, ID>{
     boolean save(T entity);
     boolean update(T entity);
     boolean delete(T t);
-    Optional<T> findOne(ID id);
+    Optional<T> findById(ID id);
     List<T> findAll();
 }
